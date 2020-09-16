@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: inspect
+  labels:
+    app: web
+spec:
+  containers:
+  - name: inspect
+    image: alpine:3.10
+    command: ["sleep","3600"]
